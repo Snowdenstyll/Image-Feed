@@ -1,8 +1,11 @@
 export const fetchImages = async () => {
-  const response = await fetch('https://unsplash.it/list/');
-  const images = await response.json();
-
-  return images;
+    try {
+      const response = await fetch('https://picsum.photos/list/');
+      const json = await response.json();
+      return json;
+  } catch (error) {
+      console.error(error);
+  }
 };
 
 export const getImageFromId = id =>
