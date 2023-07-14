@@ -1,0 +1,8 @@
+{
+  "name": "ImageFeed",
+  "packageManager": "yarn@3.6.1",
+  "dependencies": {
+    "expo": "^49.0.2",
+    "expo-cli": "^6.3.10"
+  }
+}
